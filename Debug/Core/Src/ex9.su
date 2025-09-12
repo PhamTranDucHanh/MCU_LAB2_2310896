@@ -1,4 +1,0 @@
-ex9.c:26:6:updateCol	24	static
-ex9.c:31:6:enableCol	24	static
-ex9.c:37:6:updateLEDMatrix	16	static
-ex9.c:86:6:ex9_run	8	static
