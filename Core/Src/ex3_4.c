@@ -8,8 +8,8 @@
 #include "ex3_4.h"
 #define led_timer 0
 #define ex3_timer 1
-#define led_dur 100
-#define ex3_dur 25
+#define led_dur 1000
+#define ex3_dur 250
 
 const int MAX_LED = 4;
 int index_led = 0;

@@ -1,5 +1,5 @@
 /*
- * ex5.h
+ * ex5_6.h
  *
  *  Created on: Sep 9, 2025
  *      Author: HANH

@@ -7,7 +7,7 @@
 
 #include "ex10.h"
 #define matrix_timer 2
-#define matrix_dur 25
+#define matrix_dur 250
 
 void movingLEDMatrix(int index, int frame){
 	switch(index){
