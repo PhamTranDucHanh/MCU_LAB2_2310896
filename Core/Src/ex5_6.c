@@ -6,7 +6,7 @@
  */
 
 
-#include "ex5.h"
+#include <ex5_6.h>
 
 void updateClockBuffer(int hour, int minute){
 	led_buffer[0] = hour/10;

@@ -8,8 +8,8 @@
 #include "ex7_8.h"
 #define SEG_timer 0
 #define ex7_timer 1
-#define ex7_dur 100
-#define SEG_dur 25
+#define ex7_dur 1000
+#define SEG_dur 250
 
 void ex7_run(){
 	static int hour = 15, minute = 59, second = 55;

@@ -19,8 +19,8 @@ states presentState2 = INIT;
 
 #define led_timer 0
 #define SEG_timer 1
-#define led_dur 100
-#define SEG_dur 50
+#define led_dur 1000
+#define SEG_dur 500
 
 void ex2_run(){
 	switch (presentState2){

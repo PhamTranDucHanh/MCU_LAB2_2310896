@@ -7,7 +7,7 @@
 
 #include "ex9.h"
 #define sweep_timer 3
-#define sweep_dur 25
+#define sweep_dur 250
 
 uint16_t rows[8] = {ROW0_Pin, ROW1_Pin, ROW2_Pin, ROW3_Pin,
 					ROW4_Pin, ROW5_Pin, ROW6_Pin, ROW7_Pin};

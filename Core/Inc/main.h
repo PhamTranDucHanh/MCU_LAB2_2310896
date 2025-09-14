@@ -35,7 +35,7 @@ extern "C" {
 #include "display7SEG.h"
 #include "software_timer.h"
 #include "ex3_4.h"
-#include "ex5.h"
+#include "ex5_6.h"
 #include "ex9.h"
 #include "ex7_8.h"
 /* USER CODE END Includes */

@@ -26,8 +26,7 @@
 #include "ex1.h"
 #include "ex2.h"
 #include "ex3_4.h"
-#include "ex5.h"
-#include "ex6.h"
+#include "ex5_6.h"
 #include "ex7_8.h"
 #include "ex9.h"
 #include "ex10.h"
@@ -48,8 +47,7 @@
 //#define ex1
 //#define ex2
 //#define ex3_4
-//#define ex5
-//#define ex6
+//#define ex5_6
 //#define ex7_8
 //#define ex9
 #define ex10
@@ -111,8 +109,6 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//  timerSet(1, 50);
-//  timerSet(0, 100);
   while (1)
   {
 

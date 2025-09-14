@@ -7,11 +7,11 @@
 
 
 #include "software_timer.h"
-
-struct TimerStruct timerArray[5];
+#define timer_cycle 10
+struct TimerStruct timerArray[4];
 
 void timerSet(int idx, int counter){
-	timerArray[idx].counter = counter;
+	timerArray[idx].counter = counter / timer_cycle;
 	timerArray[idx].flag = 0;
 }
 
