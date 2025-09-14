@@ -93,7 +93,7 @@ All three functions operate on the timers in the array by looping through them w
      ```c
      // #define ex1
      // #define ex2
-     #define ex3_4   // ← Uncomment this line to run exercise 3
+     #define ex3_4   // ← Uncomment this line to run exercise 3 and 4
      // #define ex5_6
      // ...
      ```
