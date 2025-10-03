@@ -6,8 +6,10 @@
  */
 
 #include "ex9.h"
-#define sweep_timer 3
-#define sweep_dur 250
+#define led_timer 		0
+#define led_dur			1000
+#define sweep_timer 	5
+#define sweep_dur 		250
 
 uint16_t rows[8] = {ROW0_Pin, ROW1_Pin, ROW2_Pin, ROW3_Pin,
 					ROW4_Pin, ROW5_Pin, ROW6_Pin, ROW7_Pin};
@@ -88,7 +90,7 @@ void ex9_run(){
 	static int idx = 0;
 	if (first){
 		timerSet(sweep_timer, sweep_dur);
-
+		timerSet(led_timer, led_dur);
 		first--;
 	}
 
@@ -98,5 +100,10 @@ void ex9_run(){
 		updateLEDMatrix(idx++);
 	}
 	if (idx == 8) idx = 0;
+	ex7_run();
 
+	if (timerFlag(led_timer)){
+		timerSet(led_timer, led_dur);
+		HAL_GPIO_TogglePin(GPIOA, LED_RED_Pin);
+	}
 }
