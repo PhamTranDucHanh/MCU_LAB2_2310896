@@ -6,8 +6,10 @@
  */
 
 #include "ex10.h"
-#define matrix_timer 2
-#define matrix_dur 250
+#define led_timer		0
+#define led_dur			1000
+#define matrix_timer 	6
+#define matrix_dur 		100 //**
 
 void movingLEDMatrix(int index, int frame){
 	switch(index){
@@ -62,7 +64,7 @@ void ex10_run(){
 	static int first = 1;
 	if (first){
 		timerSet(matrix_timer, matrix_dur);
-
+		timerSet(led_timer, led_dur);
 		first--;
 	}
 
@@ -80,4 +82,9 @@ void ex10_run(){
 	}
 
 	ex7_run();
+
+	if (timerFlag(led_timer)){
+		timerSet(led_timer, led_dur);
+		HAL_GPIO_TogglePin(GPIOA, LED_RED_Pin);
+	}
 }
