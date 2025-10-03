@@ -7,8 +7,9 @@
 
 
 #include "software_timer.h"
-#define timer_cycle 10
-struct TimerStruct timerArray[4];
+#define no_of_timer			7
+#define timer_cycle 		10
+struct TimerStruct timerArray[no_of_timer];
 
 void timerSet(int idx, int counter){
 	timerArray[idx].counter = counter / timer_cycle;
@@ -16,7 +17,7 @@ void timerSet(int idx, int counter){
 }
 
 void timerRun(){
-	for (int i = 0; i < 5; i++){
+	for (int i = 0; i < no_of_timer; i++){
 		if(timerArray[i].counter > 0){
 			timerArray[i].counter--;
 			if (timerArray[i].counter <= 0){
