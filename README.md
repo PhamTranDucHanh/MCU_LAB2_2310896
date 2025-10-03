@@ -99,5 +99,5 @@ All three functions operate on the timers in the array by looping through them w
      ```
   3. After building, update the path to the generated `.hex` file in your Proteus simulation to match the new build output.
   4. Rebuild the project and flash it to the board or load the `.hex` file into Proteus.
-  5. **Note:** Since the code may use shared resources (e.g., `HAL_Delay`, pins, LEDs) for demo purposes, only run one exercise at a time (i.e., only one `#define` should be active before building) to ensure correct operation.  
+  5. **Note:** Since the code may use shared resources (e.g. pins, LEDs) for demo purposes, only run one exercise at a time (i.e., only one `#define` should be active before building) to ensure correct operation.  
    However, for exercise 10, thanks to the use of timer interrupts and software timers, it is possible to run all functionalities from exercises 1 to 10 simultaneously. If you want to test all features at once (e.g., LED blinking, digital clock, moving character 'A' on the LED matrix), simply define and run the demo for lab10.
